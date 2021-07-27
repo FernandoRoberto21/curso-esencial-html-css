@@ -99,6 +99,10 @@ header a:hover{
 nav details summary{
         font-weight: bold;
 }
+nav p{
+        font-weight: bold;
+        color: var(--white);
+}
 
 pre{
         background: var(--white10);
