@@ -42,7 +42,7 @@ html{
 body{
         color: var(--gray30);
         /* font-family: charter; */
-        font-family: 'Roboto', sans-serif;
+        font-family: 'Rubik';
         margin: 0;
 }
 .header-content{
@@ -61,7 +61,6 @@ header{
         font-size: 14px;
         color: var(--gray10);
         margin-block-start:0px;
-
         /* position: sticky; */
 /*         top: 64px;
         left: -232px;
@@ -74,39 +73,67 @@ header a{
         color: var(--gray10);
         text-decoration: none;
 }
-header a:hover{
-        color: #212121;
-}
 
 nav details summary{
         font-weight: bold;
         line-height: 24px;
 }
 
+/* header ol{
+        padding-inline-start: 15px;
+}
+
 header li{
         margin-bottom: 16px;
+} */
+.temas{
+        display: block;
+        box-sizing: content-box;
+}
+
+.temas p{
+        box-sizing: content-box;
+        padding-block: 8px;
+        padding-inline-start: 8px;
+        margin-block: 8px;
+}
+
+.temas p:hover{
+        background-color: #5551FF;
+        color: white;
+}
+
+.temas p:hover a{
+        color: white;
 }
 
 pre{
-        background: #FEC62E;
+        background: white;
         padding: 40px;
         /* padding-left: 40px; */
-        font-family: 'Roboto';
         overflow: auto;
         line-height: 24px;
         white-space: pre-wrap;
-        font-family: 'Roboto', sans-serif;
-}
+        text-align: justify;
 
+        border-radius: 8px;
+        border: 10px solid red;
+        border-block-start-color: blue;
+        border: 10px solid #5551FF;
+        box-shadow: -10px 10px 0 0 #ABAAF6;
+        font-family: 'Rubik';
+}
 
 blockquote{
         font-size: 16px;
         line-height: 24px;
-        margin-block-start: 32px;
+        margin-block-start: 64px;
         margin-block-end: 64px;
-        margin-inline: 0px;
-        border-left: 4px solid var(--gray30);
+        margin-inline-start: 203px;
+        margin-inline-end: 87px;
+        border-left: 4px solid #5551FF;
         padding-inline-start: 16px;
+        text-align: justify;
 
 }
 
@@ -140,7 +167,7 @@ body h1{
 }
 
 h1{
-        font-size: 24px;
+        font-size: 28px;
 }
 
 /* h1 + p{
@@ -152,29 +179,27 @@ hr{
 }
 
 h2{
-        font-size: 24px;
+        font-size: 32px;
         margin-block: 40px;
         font-weight: normal;
 }
 h3{
-        font-size: 20px;
+        font-size: 22px;
         margin-block: 16px;
         font-weight: normal;
         position: relative;
         top: 0;
         background: white;
 }
-p{
-        text-align: justify;
-}
+
 /* .header{
         position: sticky;
         top:0;
 } */
 .indice{
         display: block;
-        margin-block-end: 112px;
-        text-align: right;
+        margin-block-end: 40px;
+        text-align: justify;
 }
 .indice a{
         box-sizing: content-box;
@@ -215,7 +240,7 @@ p{
 
 
 .hero{
-        background-image:linear-gradient(to top, rgba(255,255,255,.3), transparent), url('../Images/patron1.png');
+        background-image:linear-gradient(274.51deg, rgba(74,0,244,.6) 5%, rgba(142, 45, 226, 0.5) 130.61%), url('../Images/patron2.png');
         block-size: 96px;
         /* width: 100%; */
         /* background-repeat: no-repeat;
@@ -232,6 +257,7 @@ p{
 
 .section-content{
         margin-block-end: 0px;
+        text-align: center;
 }
 .section-content p{
         margin-block-start: 16px;
@@ -260,6 +286,14 @@ p{
         max-inline-size: 100%;
 }
 
+#section1 img{
+        margin-inline-start: 131.6px;
+        margin-inline-end: 131.6px;
+
+
+
+}
+
 .section-content{
         counter-reset: titleList;
 }
@@ -276,52 +310,55 @@ p{
 
 #section1 p{
         margin-block-end: 0;
+        justify-content: center;
 }
 
+#section2 p{
+        justify-content: center;
+        text-align: center;
+}
 #section2 h3{
         margin-block-start: 40px;
 }
 #section3 h2{
         margin-block-start: 156px;
 }
+
 #section3 h3{
         margin-block-start: 40px;
+}
+#section3{
+        text-align: justify;
+}
+#section3 ol{
+        padding-inline-start: 20px;
+}
+#section3 ul li::marker{
+        color: #5551FF;
 }
 
 #section1 h3::before{
         content: counter(titleList,decimal) '. ';
 }
 
-#section1 h3::after{
-        content: '';
-        width: 80px;
-        height: 4px;
-        background-color: var(--gray30);
-        display: inline-block;
-        position: absolute;
-        left: 0;
-        bottom: 0;
+
+.intro{
+        text-align: center;
 }
 
 #section2 h3::before{
         content: counter(titleList,decimal) '. ';
 }
 
-#section2 h3::after{
-        content: '';
-        width: 80px;
-        height: 4px;
-        background-color: var(--gray30);
-        display: inline-block;
-        position: absolute;
-        left: 0;
-        bottom: 0;
-}
+/* ::selection{
+        background: red;
+} */
 
 
 .slider-container{
+        /* block-size: 100px; */
         display: block;
-        overflow: hidden;
+        overflow:hidden;
         scroll-behavior: smooth;
         white-space: nowrap;
         font-size: 0;
@@ -329,6 +366,7 @@ p{
 
 .video{
         margin: 0;
+        /* border: 1px solid blue; */
         display: inline-block;
         width: 100%;
         height: auto;
@@ -344,9 +382,12 @@ p{
         display: inline-block;
         inline-size: 15px;
         block-size: 15px;
-        background: #424242;
+        background: #5551FF;
         border-radius: 50%;
 }
+/* ::selection{
+        background: red;
+} */
 
 .form input{
 /*         border: 1px solid var(--gray30); */
@@ -362,7 +403,7 @@ p{
 }
 
 .form input[type="submit"]{
-        background: black;
+        background: #5551FF;
         color: white;
         border: none;
 }
@@ -403,25 +444,24 @@ footer{
         h1{
                 font-size: 60px;
                 margin-block-start: 64px;
+
         }
         .hero{
                 block-size: 350px;
         }
-        .main-content{
-                background: white;
-                padding-inline-start: 44px;
-                padding-inline-end: 0px;
-        }
         .header{
                 position: sticky;
                 inset-block-start: -45px;
-
         }
 
         .header-content{
                 position: relative;
                 inset-block-start: 65px;
                 padding-inline: 0;
+        }
+        #section1 img{
+                margin-inline-start: 395px;
+                margin-inline-end: 395px;
         }
 
         h2{
@@ -431,21 +471,14 @@ footer{
                 font-size: 24px;
         }
 
+
+
         header{
                 position: absolute;
                 inset-block-start: 0px;
-                inset-inline-start: -208px;
-                inline-size: 208px;
-                height: 450px;
-                overflow-y: scroll;
+                inset-inline-end: -208px;
+                inline-size: 188px;
         }
-        ::-webkit-scrollbar {
-            width: 4px;
-          }
-          ::-webkit-scrollbar-thumb {
-            background: black;
-          }
-
         blockquote{
                 font-size: 24px;
         }

@@ -4,12 +4,16 @@
                 <meta charset="UTF-8">
                 <meta http-equiv="X-UA-Compatible" content="IE=edge">
                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                <link rel="stylesheet" href="./css/styles-physical.css">
+                <link rel="stylesheet" href="./css/styles-nemiumd.css">
                 <link rel="preconnect" href="https://fonts.googleapis.com">
                 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
                 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
                 <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;1,400;1,700&display=swap"
                         rel="stylesheet">
+                <link rel="preconnect" href="https://fonts.googleapis.com">
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+                <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;700&display=swap" rel="stylesheet">
+
                 <meta property="og:title" content="Mi proyecto del Curso esencial de HTML y CSS" />
                 <meta property="og:type" content="website" />
                 <meta property="og:description" content="Todo lo que necesitas saber en tu día a día como Frontend" />
@@ -52,9 +56,9 @@
                                                                 </div>
                                                         </div>
                                                         <p>CONTENIDO</p>
-                                                        <details open>
+<!--                                                         <details open>
                                                                 <summary>Setup</summary>
-                                                                <ol>
+                                                                <ol class="temas">
                                                                         <li><a href="#google-chrome">Google Chrome</a></li>
                                                                         <li><a href="#vsc">Visual Studio Code</a></li>
                                                                         <li><a href="#figma">Figma</a></li>
@@ -63,7 +67,7 @@
                                                         </details>
                                                         <details open>
                                                                 <summary>Conceptos esenciales del Desarrollo Web</summary>
-                                                                <ol>
+                                                                <ol class="temas">
                                                                         <li><a href="#html">Qué es HTML</a></li>
                                                                         <li><a href="#etiquetas">Etiquetas</a></li>
                                                                         <li><a href="#dom">DOM</a></li>
@@ -71,6 +75,27 @@
                                                                         <li><a href="#atributos">Atributos</a></li>
                                                                         <li><a href="#css">Qué es CSS</a></li>
                                                                 </ol>
+                                                        </details> -->
+
+                                                        <details open>
+                                                                <summary>Setup</summary>
+                                                                <div class="temas">
+                                                                        <p><a href="#google-chrome">1. Google Chrome</a></p>
+                                                                        <p><a href="#vsc">2. Visual Studio Code</a></p>
+                                                                        <p><a href="#figma">3. Figma</a></p>
+                                                                        <p><a href="#github">4. GitHub</a></p>
+                                                                </div>
+                                                        </details>
+                                                        <details open>
+                                                                <summary>Conceptos esenciales del Desarrollo Web</summary>
+                                                                <div class="temas">
+                                                                        <p><a href="#html">1. Qué es HTML</a></p>
+                                                                        <p><a href="#etiquetas">2. Etiquetas</a></p>
+                                                                        <p><a href="#dom">3. DOM</a></p>
+                                                                        <p><a href="#semantica">4. Semántica</a></p>
+                                                                        <p><a href="#atributos">5. Atributos</a></p>
+                                                                        <p><a href="#css">6. Qué es CSS</a></p>
+                                                                </div>
                                                         </details>
                                                 </nav>
                                         </header>
@@ -81,7 +106,7 @@
                         <div class="wrapper">
                                 <div class="main-content">
                                         <h1>Curso esencial de HTML y CSS</h1>
-                                        <p>
+                                        <p class="intro">
                                                 Este es el inicio de tu carrera como Desarrollador Web, empezarás aprendiendo HTML y CSS para la creación de
                                                 contenidos,
                                                 en el nivel 2 aprenderás de componentes y en 3 sobre layouts.
@@ -123,10 +148,10 @@
                                                         manera privada, Github será esencial para almacenar tu futuro portafolio.
                                                 </p>
                                                 <blockquote>
-                                                        <p>
+                                                        <p class="frase">
                                                                 “Este es el inicio de tu carrera como Desarrollador Web”
                                                         </p>
-                                                        <p>
+                                                        <p class="frase">
                                                                 <span>
                                                                         Leonidas Esteban
                                                                 </span>
@@ -227,7 +252,7 @@
                                                         <li>padding-block | padding-inline | padding-block-start | padding-block-end | padding-inline-start |
                                                                 padding-inline-end</li>
                                                 </ul>
-                                                <h3>Videos de Leonidas Esteban</h3>
+                                                <h3>Hola estos son algunos video muy lindos</h3>
                                                 <div class="slider">
                                                         <scroll-container class="slider-container">
                                                                 <scroll-page class="slider-slide" id="video-1">
@@ -237,13 +262,13 @@
                                                                                 allowfullscreen></iframe>
                                                                 </scroll-page>
                                                                 <scroll-page class="slider-slide" id="video-2">
-                                                                        <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/_tniWgtqj_M"
+                                                                        <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/5f5Ig_U2Bpk"
                                                                                 title="YouTube video player" frameborder="0"
                                                                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                                                                 allowfullscreen></iframe>
                                                                 </scroll-page>
                                                                 <scroll-page class="slider-slide" id="video-3">
-                                                                        <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/6GTNNSuaToo"
+                                                                        <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/5f5Ig_U2Bpk"
                                                                                 title="YouTube video player" frameborder="0"
                                                                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                                                                 allowfullscreen></iframe>
@@ -256,12 +281,13 @@
                                                         </div>
                                                 </div>
                                         </section>
+<!--                                         <div class="section-content"></div> -->
                                         <p>
                                                 Si tienes alguna pregunta escríbeme a
                                                 <a href="mailto:roberto@prointernet.mx" target="_blank">roberto@prointernet.mx</a>
                                         </p>
                                         <div class="section content">
-                                                <h2>Ingresa a nuestro newsletter</h2>
+                                                <h3>Ingresa a nuestro newsletter</h3>
                                                 <form class="form" action="#">
                                                         <input type="text" required placeholder="Nombre">
                                                         <input type="email" required placeholder="Correo Electrómico">
@@ -273,7 +299,7 @@
                         </div>
 
                 </main>
-                <footer>
+<!--                 <footer>
                         <div class="titlefoot">
                                 <p>© Fernando Roberto</p>
                         </div>
@@ -282,6 +308,6 @@
                                 <img class="imagefoot" src="./Images/facebook_1.png" alt="">
                                 <img class="imagefoot" src="./Images/twitter_1.png" alt="">
                         </div>
-                </footer>
+                </footer> -->
         </body>
 </html>
