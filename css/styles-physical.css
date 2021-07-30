@@ -95,7 +95,6 @@ pre{
         overflow: auto;
         line-height: 24px;
         white-space: pre-wrap;
-        font-family: 'Roboto', sans-serif;
 }
 
 
@@ -318,9 +317,64 @@ p{
         bottom: 0;
 }
 
+.form input{
+/*         border: 1px solid var(--gray30); */
+        background: white;
+        box-sizing: border-box;
+        border-radius: 50px;
+        padding-inline: 16px;
+        padding-block: 12px;
+        color: var(--gray10);
+        font-size: 16px;
+        display: inline;
+        margin-block-end: 24px;
+}
+
+.form input[type="submit"]{
+        background: black;
+        color: white;
+        border: none;
+        margin-inline-start: -75px;
+        float: none;
+        padding-block: 15px;
+}
+
+.form input::-webkit-input-placeholder{
+        color: var(--gray30)
+}
+
+
+footer{
+
+        height: 174px;
+        background-color:var(--gray20);
+        color: white;
+        margin-block-start: 125px;
+        display: block;
+        text-align: center;
+}
+
+.titlefoot{
+        font-size: 32px;
+        line-height: 37.5px;
+        padding-block-start: 48px;
+}
+.titlefoot p{
+        text-align: center;
+        margin-block: 0px;
+}
+.imagenes{
+        margin-block-start: 19px;
+}
+.imagefoot{
+        block-size: 24px;
+        display: inline;
+}
 
 .slider-container{
+        position: relative;
         display: block;
+        scroll-snap-type: mandatory;
         overflow: hidden;
         scroll-behavior: smooth;
         white-space: nowrap;
@@ -347,57 +401,6 @@ p{
         background: #424242;
         border-radius: 50%;
 }
-
-.form input{
-/*         border: 1px solid var(--gray30); */
-        background: white;
-        box-sizing: border-box;
-        border-radius: 50px;
-        padding-inline: 16px;
-        padding-block: 12px;
-        color: var(--gray10);
-        font-size: 16px;
-        display: inline;
-        margin-block-end: 24px;
-}
-
-.form input[type="submit"]{
-        background: black;
-        color: white;
-        border: none;
-}
-
-.form input::-webkit-input-placeholder{
-        color: var(--gray30)
-}
-
-footer{
-/*         width: 100%; */
-        height: 174px;
-        background-color:var(--gray20);
-        color: white;
-        margin-block-start: 125px;
-        display: block;
-        text-align: center;
-}
-
-.titlefoot{
-        font-size: 32px;
-        line-height: 37.5px;
-        padding-block-start: 48px;
-}
-.titlefoot p{
-        text-align: center;
-        margin-block: 0px;
-}
-.imagenes{
-        margin-block-start: 19px;
-}
-.imagefoot{
-        block-size: 24px;
-        display: inline;
-}
-
 
 @media screen and (min-width:1366px){
         h1{
@@ -436,13 +439,13 @@ footer{
                 inset-block-start: 0px;
                 inset-inline-start: -208px;
                 inline-size: 208px;
-                height: 450px;
+                height: 400px;
                 overflow-y: scroll;
         }
         ::-webkit-scrollbar {
             width: 4px;
           }
-          ::-webkit-scrollbar-thumb {
+        ::-webkit-scrollbar-thumb {
             background: black;
           }
 
@@ -452,4 +455,6 @@ footer{
         footer{
                 block-size: 174px;
         }
+
+
 }

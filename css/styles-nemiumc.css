@@ -45,11 +45,6 @@ body{
         font-family: 'Roboto', sans-serif;
         margin: 0;
 }
-.header-content{
-/*         padding-inline: 20px; */
-        /* position: relative;
-        inset-block-start: 65px; */
-}
 
 
 a{
@@ -382,6 +377,9 @@ summary{
         background: black;
         color: white;
         border: none;
+        margin-inline-start: -75px;
+        float: none;
+        padding-block: 15px;
 }
 
 .form input::-webkit-input-placeholder{

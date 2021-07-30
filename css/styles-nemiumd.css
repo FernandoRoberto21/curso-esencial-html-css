@@ -129,8 +129,8 @@ blockquote{
         line-height: 24px;
         margin-block-start: 64px;
         margin-block-end: 64px;
-        margin-inline-start: 203px;
-        margin-inline-end: 87px;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
         border-left: 4px solid #5551FF;
         padding-inline-start: 16px;
         text-align: justify;
@@ -146,10 +146,6 @@ blockquote span::before{
 
 }
 
-
-/* ol li:nth-child(even){
-        border:1px solid red;
-} */
 
 body h1{
 /*         font-size: 24px; */
@@ -406,6 +402,9 @@ h3{
         background: #5551FF;
         color: white;
         border: none;
+        margin-inline-start: -75px;
+        float: none;
+        padding-block: 15px;
 }
 
 .form input::-webkit-input-placeholder{
@@ -449,6 +448,12 @@ footer{
         .hero{
                 block-size: 350px;
         }
+
+        .main-content{
+                background: white;
+                padding-inline-start: 0px;
+                padding-inline-end: 44px;
+        }
         .header{
                 position: sticky;
                 inset-block-start: -45px;
@@ -477,10 +482,21 @@ footer{
                 position: absolute;
                 inset-block-start: 0px;
                 inset-inline-end: -208px;
-                inline-size: 188px;
+                inline-size: 208px;
+                height: 400px;
+                overflow-y: scroll;
         }
+        ::-webkit-scrollbar {
+            width: 4px;
+          }
+        ::-webkit-scrollbar-thumb {
+            background: black;
+          }
+
         blockquote{
                 font-size: 24px;
+                margin-inline-start: 203px;
+                margin-inline-end: 87px;
         }
         footer{
                 block-size: 174px;
